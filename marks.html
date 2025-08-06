@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Onesmos Nesib Academy - Marks</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Onesmos Nesib Academy</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="admission.html">Admission</a>
+      <a href="contact.html">Contact</a>
+      <a href="marks.html" class="active">Marks</a>
+      <a href="login.html">Login</a>
+      <button id="dark-mode-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Student Marks</h2>
+
+    <div class="table-container">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Student</th>
+            <th>Mathematics</th>
+            <th>English</th>
+            <th>Biology</th>
+            <th>Chemistry</th>
+            <th>Physics</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Hunde Derje</td>
+            <td>85</td>
+            <td>90</td>
+            <td>78</td>
+            <td>88</td>
+            <td>92</td>
+          </tr>
+          <tr>
+            <td>Abakabegna Teshome</td>
+            <td>75</td>
+            <td>80</td>
+            <td>70</td>
+            <td>82</td>
+            <td>85</td>
+          </tr>
+          <tr>
+            <td>Amanuel Tolessa</td>
+            <td>75</td>
+            <td>80</td>
+            <td>70</td>
+            <td>82</td>
+            <td>85</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="gradesChart"></canvas>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Onesmos Nesib Academy | Nekemte, Oromia</p>
+  </footer>
+
+  <script>
+    const ctx = document.getElementById('gradesChart').getContext('2d');
+    const gradesChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Mathematics', 'English', 'Biology', 'Chemistry', 'Physics'],
+        datasets: [
+          {
+            label: 'Hunde Derje',
+            data: [85, 90, 78, 88, 92],
+            backgroundColor: 'rgba(54, 162, 235, 0.7)'
+          },
+          {
+            label: 'Abakabegna Teshome',
+            data: [75, 80, 70, 82, 85],
+            backgroundColor: 'rgba(255, 206, 86, 0.7)'
+          },
+          {
+            label: 'Amanuel Tolessa',
+            data: [75, 80, 70, 82, 85],
+            backgroundColor: 'rgba(75, 192, 192, 0.7)'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'top'
+          },
+          title: {
+            display: true,
+            text: 'Performance Comparison'
+          }
+        },
+        animation: {
+          duration: 1500,
+          easing: 'easeInOutBounce'
+        }
+      }
+    });
+
+    // Dark mode toggle
+    const toggle = document.getElementById('dark-mode-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>

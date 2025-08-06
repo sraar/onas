@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Departments - Onesmos Nesib Academy</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f3f7fc;
+      color: #333;
+    }
+
+    header {
+      background-color: #0b5394;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin: 10px 0 0;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 6px 10px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav ul li a.active,
+    nav ul li a:hover {
+      background: white;
+      color: #0b5394;
+      border-radius: 6px;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #0b5394;
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    section p {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    section ul {
+      list-style: none;
+      padding-left: 0;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    section ul li {
+      background: white;
+      border-left: 6px solid #0b5394;
+      margin: 10px 0;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      border-radius: 6px;
+      animation: slideIn 0.5s ease both;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0b5394;
+      color: white;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Onesmos Nesib Academy</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="departments.html" class="active">Departments</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>🎓 Our Departments</h2>
+      <p>We nurture every student’s academic and creative potential.</p>
+      <ul>
+        <li><strong>Mathematics:</strong> Advanced courses for analytical and problem-solving skills.</li>
+        <li><strong>Science:</strong> Physics, Chemistry, and Biology with practical labs.</li>
+        <li><strong>Languages:</strong> English, Afaan Oromo, Amharic, and more.</li>
+        <li><strong>Social Studies:</strong> History, Geography, Civics, and Economics.</li>
+        <li><strong>Arts and Culture:</strong> Music, Drawing, and Traditional dance.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Onesmos Nesib Academy | Nekemte, Oromia</p>
+  </footer>
+</body>
+</html>

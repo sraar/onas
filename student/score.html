@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Score Report - Onesmos Nesib Academy</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="dashboard-header">
+    <h1>Onesmos Nesib Academy - Score Report</h1>
+    <nav>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="score.html" class="active">Score Report</a></li>
+        <li><a href="assignments.html">Assignments</a></li>
+        <li><a href="library.html">Library</a></li>
+        <li><a href="chat.html">Chat</a></li>
+        <li><a href="../index.html">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="dashboard fade-in">
+    <section class="dashboard-card">
+      <h2>Detailed Score Report</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Midterm 1</th>
+            <th>Midterm 2</th>
+            <th>Final</th>
+            <th>Average</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mathematics</td>
+            <td>80</td>
+            <td>85</td>
+            <td>90</td>
+            <td>85</td>
+          </tr>
+          <tr>
+            <td>English</td>
+            <td>88</td>
+            <td>90</td>
+            <td>92</td>
+            <td>90</td>
+          </tr>
+          <tr>
+            <td>Biology</td>
+            <td>75</td>
+            <td>80</td>
+            <td>82</td>
+            <td>79</td>
+          </tr>
+          <tr>
+            <td>Chemistry</td>
+            <td>78</td>
+            <td>82</td>
+            <td>85</td>
+            <td>81.7</td>
+          </tr>
+          <tr>
+            <td>Physics</td>
+            <td>85</td>
+            <td>88</td>
+            <td>90</td>
+            <td>87.7</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="dashboard-card" style="margin-top: 2rem;">
+      <h2>Score Chart</h2>
+      <canvas id="scoreChart" width="400" height="200"></canvas>
+    </section>
+  </main>
+
+  <script src="../script.js"></script>
+  <script>
+    const ctx = document.getElementById('scoreChart').getContext('2d');
+    const scoreChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: ['Midterm 1', 'Midterm 2', 'Final'],
+        datasets: [
+          {
+            label: 'Mathematics',
+            data: [80, 85, 90],
+            borderColor: '#3498db',
+            fill: false,
+          },
+          {
+            label: 'English',
+            data: [88, 90, 92],
+            borderColor: '#2ecc71',
+            fill: false,
+          },
+          {
+            label: 'Biology',
+            data: [75, 80, 82],
+            borderColor: '#f1c40f',
+            fill: false,
+          },
+          {
+            label: 'Chemistry',
+            data: [78, 82, 85],
+            borderColor: '#e67e22',
+            fill: false,
+          },
+          {
+            label: 'Physics',
+            data: [85, 88, 90],
+            borderColor: '#e74c3c',
+            fill: false,
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            max: 100
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

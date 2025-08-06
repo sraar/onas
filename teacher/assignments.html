@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teacher Assignments - Onesmos Nesib Academy</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header>
+    <h1>Onesmos Nesib Academy</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="assignments.html" class="active">Assignments</a>
+      <a href="announcements.html">Announcements</a>
+      <a href="messages.html">Messages</a>
+      <a href="../login.html">Logout</a>
+      <button id="dark-mode-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Manage Assignments</h2>
+
+    <form id="uploadAssignmentForm" enctype="multipart/form-data">
+      <label for="assignmentTitle">Assignment Title:</label><br />
+      <input type="text" id="assignmentTitle" name="assignmentTitle" required /><br /><br />
+
+      <label for="gradeSelect">Grade:</label><br />
+      <select id="gradeSelect" name="gradeSelect" required>
+        <option value="">Select Grade</option>
+        <option value="Grade 9">Grade 9</option>
+        <option value="Grade 10">Grade 10</option>
+        <option value="Grade 11">Grade 11</option>
+        <option value="Grade 12">Grade 12</option>
+      </select><br /><br />
+
+      <label for="fileUpload">Upload Assignment File (PDF/DOC):</label><br />
+      <input type="file" id="fileUpload" name="fileUpload" accept=".pdf,.doc,.docx" required /><br /><br />
+
+      <button type="submit">Upload</button>
+    </form>
+
+    <section id="assignmentsList" style="margin-top: 2rem;">
+      <h3>Existing Assignments</h3>
+      <ul>
+        <!-- dynamically filled by JS -->
+      </ul>
+    </section>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>

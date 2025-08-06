@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Dashboard - Onesmos Nesib Academy</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      font-family: 'Poppins', sans-serif;
+    }
+    h2 {
+      color: #4a4e69;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 25px;
+    }
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    th {
+      background-color: #4a4e69;
+      color: white;
+      font-weight: 700;
+    }
+    button {
+      background-color: #4a4e69;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #9a8c98;
+    }
+    .reset-input {
+      width: 140px;
+      padding: 5px;
+      margin-right: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Admin Dashboard</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="admin.html" class="active">Admin</a>
+      <a href="login.html">Logout</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Pending Registration Requests</h2>
+    <table id="requestsTable">
+      <thead>
+        <tr>
+          <th>Full Name</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Desired Username</th>
+          <th>Approve</th>
+          <th>Reject</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Requests loaded dynamically -->
+      </tbody>
+    </table>
+
+    <h2>Manage Users</h2>
+    <table id="usersTable">
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>Role</th>
+          <th>Reset Password</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Users loaded dynamically -->
+      </tbody>
+    </table>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Notifications - Onesmos Nesib Academy</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .notifications-container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 30px 35px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      font-family: 'Poppins', sans-serif;
+    }
+    .notifications-container h2 {
+      color: #4a4e69;
+      font-weight: 700;
+      font-size: 2.2rem;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+    .notification {
+      background: #f8f9fc;
+      border-left: 6px solid #4a4e69;
+      padding: 15px 20px;
+      margin-bottom: 18px;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: background-color 0.3s ease;
+      cursor: default;
+    }
+    .notification:hover {
+      background-color: #dcdcf8;
+    }
+    .notification h3 {
+      margin-bottom: 8px;
+      color: #22223b;
+      font-weight: 600;
+      font-size: 1.2rem;
+    }
+    .notification p {
+      margin: 0;
+      color: #555;
+      font-size: 1rem;
+    }
+    .notification time {
+      display: block;
+      margin-top: 6px;
+      font-size: 0.85rem;
+      color: #9a8c98;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <header class="student-header">
+    <div class="logo">
+      <img src="../assets/onesmos-logo.png" alt="Academy Logo" />
+      <h1>Onesmos Nesib Academy</h1>
+    </div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="profile.html">Profile</a>
+      <a href="score-report.html">Score Report</a>
+      <a href="assignments.html">Assignments</a>
+      <a href="library.html">Library</a>
+      <a href="chat.html">Chat</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="notifications.html" class="active">Notifications</a>
+      <a href="leaderboard.html">Leaderboard</a>
+      <button id="dark-mode-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <main class="container fade-in">
+    <div class="notifications-container">
+      <h2>Notifications</h2>
+
+      <div class="notification">
+        <h3>Grade 12 National Exam Reminder</h3>
+        <p>The national exam will start on August 10, 2025. Make sure to review all subjects thoroughly.</p>
+        <time datetime="2025-08-01">August 1, 2025</time>
+      </div>
+
+      <div class="notification">
+        <h3>New Assignment Available</h3>
+        <p>Your Mathematics assignment on Algebra is now available in the Assignments section. Due August 15.</p>
+        <time datetime="2025-07-30">July 30, 2025</time>
+      </div>
+
+      <div class="notification">
+        <h3>Library Update</h3>
+        <p>New e-books and past papers have been added. Check them out in the Library!</p>
+        <time datetime="2025-07-25">July 25, 2025</time>
+      </div>
+
+      <div class="notification">
+        <h3>Parent-Teacher Meeting</h3>
+        <p>The meeting is scheduled for August 21, 2025. Parents and guardians are encouraged to attend.</p>
+        <time datetime="2025-07-20">July 20, 2025</time>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Onesmos Nesib Academy. All rights reserved.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

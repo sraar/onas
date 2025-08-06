@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Portal - Onesmos Nesib Academy</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f0f4fa;
+    }
+
+    header {
+      background: #003366;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0;
+      margin: 1rem 0 0;
+    }
+
+    nav ul li {
+      margin: 0 1rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #a0c4ff;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .card:hover {
+      background-color: #e0ecff;
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 0.8rem;
+      color: #0052d4;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    a.card {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Onesmos Nesib Academy</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="departments.html">Departments</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2 style="text-align:center;">Student Portal Dashboard</h2>
+    <div class="dashboard">
+      <a href="grades.html" class="card">
+        <h3>My Grades</h3>
+        <p>Check your latest grades and academic progress.</p>
+      </a>
+      <a href="attendance.html" class="card">
+        <h3>Attendance</h3>
+        <p>View your attendance records and report absences.</p>
+      </a>
+      <a href="assignments.html" class="card">
+        <h3>Assignments</h3>
+        <p>Access homework and project submissions.</p>
+      </a>
+      <a href="announcements.html" class="card">
+        <h3>Announcements</h3>
+        <p>Stay updated with the latest notices from teachers.</p>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Onesmos Nesib Academy | Nekemte, Oromia</p>
+  </footer>
+</body>
+</html>

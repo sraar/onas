@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Onesmos Nesib Academy - Admission</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Onesmos Nesib Academy</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="admission.html" class="active">Admission</a>
+      <a href="contact.html">Contact</a>
+      <a href="marks.html">Marks</a>
+      <a href="login.html">Login</a>
+      <button id="dark-mode-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Admission Form</h2>
+    <form 
+      id="admissionForm" 
+      action="https://formspree.io/f/xzzvjnav" 
+      method="POST"
+    >
+      <label for="fullname">Full Name:</label><br />
+      <input type="text" id="fullname" name="fullname" required /><br /><br />
+      
+      <label for="grade">Grade Applying For:</label><br />
+      <select id="grade" name="grade" required>
+        <option value="">Select Grade</option>
+        <option value="Grade 9">Grade 9</option>
+        <option value="Grade 10">Grade 10</option>
+        <option value="Grade 11">Grade 11</option>
+        <option value="Grade 12">Grade 12</option>
+      </select><br /><br />
+      
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+      
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

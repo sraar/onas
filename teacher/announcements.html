@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teacher Announcements - Onesmos Nesib Academy</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header>
+    <h1>Onesmos Nesib Academy</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="assignments.html">Assignments</a>
+      <a href="announcements.html" class="active">Announcements</a>
+      <a href="messages.html">Messages</a>
+      <a href="../login.html">Logout</a>
+      <button id="dark-mode-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Post Announcements</h2>
+
+    <form id="announcementForm">
+      <label for="announcementTitle">Title:</label><br />
+      <input type="text" id="announcementTitle" name="announcementTitle" required /><br /><br />
+
+      <label for="announcementContent">Content:</label><br />
+      <textarea id="announcementContent" name="announcementContent" rows="5" required></textarea><br /><br />
+
+      <button type="submit">Post Announcement</button>
+    </form>
+
+    <section id="announcementsList" style="margin-top: 2rem;">
+      <h3>Previous Announcements</h3>
+      <ul>
+        <!-- dynamically filled by JS -->
+      </ul>
+    </section>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>

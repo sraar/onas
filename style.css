@@ -1,0 +1,118 @@
+/* === Global Reset & Typography === */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height:1.6; background:#f4f6fa; color:#333; }
+
+/* === Primary Colors & Buttons === */
+:root {
+  --primary: #0066cc;
+  --secondary: #004d99;
+  --accent: gold;
+  --light: #f9f9f9;
+}
+a, button {
+  transition: background 0.3s, color 0.3s;
+}
+button {
+  background: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+button:hover { background: var(--secondary); }
+
+/* === Header & Navigation === */
+header {
+  background: var(--primary);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+header h1 { font-size: 2rem; margin-bottom: .5rem; }
+header nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+}
+header nav a {
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius:5px;
+}
+header nav a:hover,
+header nav a.active {
+  background: var(--secondary);
+}
+
+/* === Dashboard Grid Layout === */
+.dashboard {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.dashboard-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.1);
+  border-left: 5px solid var(--accent);
+  text-decoration: none;
+  color: #333;
+}
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.15);
+}
+
+/* === Animations === */
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity .8s, transform .8s; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* === Tables and Chat Style === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+th, td {
+  padding: 12px 15px; text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+th { background: var(--secondary); color: white; }
+tr:nth-child(even) { background: var(--light); }
+tr:hover { background: #dcdcf8; }
+
+.chat-box {
+  max-width: 700px;
+  height: 300px;
+  margin: auto;
+  padding: 1rem;
+  background: var(--light);
+  border-radius: 8px;
+  overflow-y: auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.chat-message {
+  margin: .5rem 0;
+  padding: .5rem 1rem;
+  border-radius: 20px;
+  background: var(--primary);
+  color: white;
+  max-width: 80%;
+}
+.chat-message.teacher {
+  background: var(--secondary);
+  align-self: flex-end;
+}
+
+/* === Responsive === */
+@media (max-width: 600px) {
+  header nav ul { flex-wrap: wrap; }
+}

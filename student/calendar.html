@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calendar - Onesmos Nesib Academy</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .calendar-container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px 35px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      font-family: 'Poppins', sans-serif;
+    }
+    .calendar-container h2 {
+      color: #4a4e69;
+      font-weight: 700;
+      margin-bottom: 25px;
+      text-align: center;
+      font-size: 2.2rem;
+    }
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+      text-align: center;
+      color: #333;
+    }
+    .day-name {
+      font-weight: 700;
+      color: #9a8c98;
+      padding-bottom: 5px;
+      border-bottom: 2px solid #4a4e69;
+    }
+    .date {
+      padding: 15px 0;
+      border-radius: 8px;
+      background: #f8f9fc;
+      cursor: default;
+      position: relative;
+      transition: background-color 0.3s ease;
+    }
+    .date.today {
+      background: #4a4e69;
+      color: white;
+      font-weight: 700;
+    }
+    .date.event {
+      background: #e67e22;
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .event-tooltip {
+      position: absolute;
+      top: 45px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #4a4e69;
+      color: white;
+      padding: 6px 10px;
+      border-radius: 5px;
+      font-size: 0.85rem;
+      white-space: nowrap;
+      display: none;
+      z-index: 10;
+    }
+    .date.event:hover .event-tooltip {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header class="student-header">
+    <div class="logo">
+      <img src="../assets/onesmos-logo.png" alt="Academy Logo" />
+      <h1>Onesmos Nesib Academy</h1>
+    </div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="profile.html">Profile</a>
+      <a href="score-report.html">Score Report</a>
+      <a href="assignments.html">Assignments</a>
+      <a href="library.html">Library</a>
+      <a href="chat.html">Chat</a>
+      <a href="calendar.html" class="active">Calendar</a>
+      <a href="notifications.html">Notifications</a>
+      <a href="leaderboard.html">Leaderboard</a>
+      <button id="dark-mode-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <main class="container fade-in">
+    <div class="calendar-container">
+      <h2>Academic Calendar - August 2025</h2>
+      <div class="calendar">
+        <div class="day-name">Sun</div>
+        <div class="day-name">Mon</div>
+        <div class="day-name">Tue</div>
+        <div class="day-name">Wed</div>
+        <div class="day-name">Thu</div>
+        <div class="day-name">Fri</div>
+        <div class="day-name">Sat</div>
+
+        <!-- Blank days before 1st -->
+        <div></div><div></div><div></div><div></div><div></div>
+
+        <!-- Dates -->
+        <div class="date">1</div>
+        <div class="date event">
+          2
+          <div class="event-tooltip">Sports Day</div>
+        </div>
+        <div class="date">3</div>
+        <div class="date">4</div>
+        <div class="date event">
+          5
+          <div class="event-tooltip">Midterm Exam</div>
+        </div>
+        <div class="date">6</div>
+        <div class="date">7</div>
+        <div class="date today">8</div>
+        <div class="date">9</div>
+        <div class="date event">
+          10
+          <div class="event-tooltip">Grade 12 Exam</div>
+        </div>
+        <div class="date">11</div>
+        <div class="date">12</div>
+        <div class="date">13</div>
+        <div class="date">14</div>
+        <div class="date">15</div>
+        <div class="date event">
+          16
+          <div class="event-tooltip">Cultural Festival</div>
+        </div>
+        <div class="date">17</div>
+        <div class="date">18</div>
+        <div class="date">19</div>
+        <div class="date">20</div>
+        <div class="date event">
+          21
+          <div class="event-tooltip">Parent-Teacher Meeting</div>
+        </div>
+        <div class="date">22</div>
+        <div class="date">23</div>
+        <div class="date">24</div>
+        <div class="date">25</div>
+        <div class="date">26</div>
+        <div class="date event">
+          27
+          <div class="event-tooltip">Project Deadline</div>
+        </div>
+        <div class="date">28</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date">31</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Onesmos Nesib Academy. All rights reserved.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

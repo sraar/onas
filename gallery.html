@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery - Onesmos Nesib Academy</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    main {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Onesmos Nesib Academy</h1>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="departments.html">Departments</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>School Gallery</h2>
+    <div class="gallery-grid">
+      <img src="../images/school_building.jpg" alt="School Building" />
+      <img src="../images/sports_day.jpg" alt="Sports Day" />
+      <img src="../images/science_lab.jpg" alt="Science Lab" />
+      <img src="../images/classroom.jpg" alt="Classroom" />
+      <img src="../images/cultural_event.jpg" alt="Cultural Event" />
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Onesmos Nesib Academy | Nekemte, Oromia</p>
+  </footer>
+</body>
+</html>

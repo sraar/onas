@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Website Content - Onesmos Nesib Academy</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header>
+    <h1>Onesmos Nesib Academy</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="users.html">Manage Users</a>
+      <a href="content.html" class="active">Website Content</a>
+      <a href="reports.html">Reports</a>
+      <a href="../login.html">Logout</a>
+      <button id="dark-mode-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Edit Website Content</h2>
+    <p>This page is for admins to update website info like announcements, news, and general text.</p>
+
+    <form id="contentForm">
+      <label for="siteAnnouncements">Announcements (HTML allowed):</label><br />
+      <textarea id="siteAnnouncements" name="siteAnnouncements" rows="6"></textarea><br /><br />
+
+      <label for="siteNews">News Section (HTML allowed):</label><br />
+      <textarea id="siteNews" name="siteNews" rows="6"></textarea><br /><br />
+
+      <button type="submit">Save Changes</button>
+    </form>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>

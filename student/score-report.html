@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Score Report - Onesmos Nesib Academy</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="student-header">
+    <div class="logo">
+      <img src="../assets/onesmos-logo.png" alt="Onesmos Nesib Academy" />
+      <h1>Onesmos Nesib Academy</h1>
+    </div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="profile.html">Profile</a>
+      <a class="active" href="score-report.html">Score Report</a>
+      <a href="assignments.html">Assignments</a>
+      <a href="library.html">Library</a>
+      <a href="chat.html">Chat</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="notifications.html">Notifications</a>
+      <a href="leaderboard.html">Leaderboard</a>
+      <button id="dark-mode-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <main class="container fade-in">
+    <section class="score-card">
+      <h2>Your Score Report</h2>
+      <div class="student-info">
+        <p><strong>Name:</strong> Hana Tesfaye</p>
+        <p><strong>Grade:</strong> 10</p>
+        <p><strong>Section:</strong> B</p>
+      </div>
+
+      <table class="score-table">
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Midterm 1</th>
+            <th>Midterm 2</th>
+            <th>Final Exam</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Mathematics</td>
+            <td>25</td>
+            <td>28</td>
+            <td>42</td>
+            <td>95</td>
+          </tr>
+          <tr>
+            <td>English</td>
+            <td>22</td>
+            <td>27</td>
+            <td>43</td>
+            <td>92</td>
+          </tr>
+          <tr>
+            <td>Biology</td>
+            <td>20</td>
+            <td>24</td>
+            <td>38</td>
+            <td>82</td>
+          </tr>
+          <tr>
+            <td>Chemistry</td>
+            <td>23</td>
+            <td>26</td>
+            <td>39</td>
+            <td>88</td>
+          </tr>
+          <tr>
+            <td>Physics</td>
+            <td>24</td>
+            <td>25</td>
+            <td>41</td>
+            <td>90</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <canvas id="scoreChart" width="100%" height="50"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Onesmos Nesib Academy. All rights reserved.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

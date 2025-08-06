@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reports - Onesmos Nesib Academy</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Onesmos Nesib Academy</h1>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="users.html">Manage Users</a>
+      <a href="content.html">Website Content</a>
+      <a href="reports.html" class="active">Reports</a>
+      <a href="../login.html">Logout</a>
+      <button id="dark-mode-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Reports Overview</h2>
+
+    <section>
+      <h3>User Registrations</h3>
+      <canvas id="userChart" width="400" height="200"></canvas>
+    </section>
+
+    <section style="margin-top: 2rem;">
+      <h3>Website Usage</h3>
+      <canvas id="usageChart" width="400" height="200"></canvas>
+    </section>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>

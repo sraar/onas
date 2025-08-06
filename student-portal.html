@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Portal - Onesmos Nesib Academy</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <!-- ========== Header ========== -->
+  <header>
+    <h1>🎓 Onesmos Nesib Academy - Student Portal</h1>
+    <nav>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="books.html">Books</a>
+      <a href="worksheets.html">Worksheets</a>
+      <a href="practice.html">Practice</a>
+      <a href="#" id="dark-mode-toggle">🌓 Mode</a>
+    </nav>
+  </header>
+
+  <!-- ========== Main Content ========== -->
+  <main class="container fade-in">
+    <h2>Welcome Back, Student!</h2>
+
+    <input type="text" id="searchInput" placeholder="🔍 Search your subjects...">
+
+    <section class="fade-in">
+      <h2>Your Current Grades</h2>
+      <canvas id="gradesChart" height="100"></canvas>
+    </section>
+
+    <section class="fade-in" style="margin-top: 60px;">
+      <h2>Quick Overview</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Subject</th>
+            <th>Assignments</th>
+            <th>Score (%)</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Subject">Mathematics</td>
+            <td data-label="Assignments">12</td>
+            <td data-label="Score">85%</td>
+            <td data-label="Status">✅ Passed</td>
+          </tr>
+          <tr>
+            <td data-label="Subject">Biology</td>
+            <td data-label="Assignments">10</td>
+            <td data-label="Score">78%</td>
+            <td data-label="Status">✅ Passed</td>
+          </tr>
+          <tr>
+            <td data-label="Subject">English</td>
+            <td data-label="Assignments">9</td>
+            <td data-label="Score">90%</td>
+            <td data-label="Status">✅ Passed</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <!-- ========== Footer ========== -->
+  <footer>
+    &copy; 2025 Onesmos Nesib Academy - All Rights Reserved
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

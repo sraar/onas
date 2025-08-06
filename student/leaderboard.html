@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Leaderboard - Onesmos Nesib Academy</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .leaderboard-container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px 35px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      font-family: 'Poppins', sans-serif;
+    }
+    .leaderboard-container h2 {
+      color: #4a4e69;
+      font-weight: 700;
+      margin-bottom: 25px;
+      text-align: center;
+      font-size: 2.2rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 1rem;
+      box-shadow: 0 8px 30px rgba(74,78,105,0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    thead tr {
+      background-color: #4a4e69;
+      color: white;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    thead th {
+      padding: 15px 20px;
+      text-align: center;
+    }
+    tbody tr {
+      border-bottom: 1px solid #e0e0e0;
+      transition: background-color 0.3s ease;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #f8f9fc;
+    }
+    tbody tr:hover {
+      background-color: #dcdcf8;
+    }
+    tbody td {
+      padding: 15px 20px;
+      text-align: center;
+      color: #555;
+    }
+    .top-rank {
+      color: #e6b325;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <header class="student-header">
+    <div class="logo">
+      <img src="../assets/onesmos-logo.png" alt="Academy Logo" />
+      <h1>Onesmos Nesib Academy</h1>
+    </div>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="profile.html">Profile</a>
+      <a href="score-report.html">Score Report</a>
+      <a href="assignments.html">Assignments</a>
+      <a href="library.html">Library</a>
+      <a href="chat.html">Chat</a>
+      <a href="calendar.html">Calendar</a>
+      <a href="notifications.html">Notifications</a>
+      <a href="leaderboard.html" class="active">Leaderboard</a>
+      <button id="dark-mode-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <main class="container fade-in">
+    <div class="leaderboard-container">
+      <h2>Top Students Leaderboard</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Student Name</th>
+            <th>Average Score (%)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="top-rank">1</td>
+            <td>Hunde Derje</td>
+            <td>87.6</td>
+          </tr>
+          <tr>
+            <td class="top-rank">2</td>
+            <td>Amanuel Tolessa</td>
+            <td>84.2</td>
+          </tr>
+          <tr>
+            <td class="top-rank">3</td>
+            <td>Abakabegna Teshome</td>
+            <td>82.4</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Fatuma Mohammed</td>
+            <td>78.1</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Samuel Bekele</td>
+            <td>76.5</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Onesmos Nesib Academy. All rights reserved.</p>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
